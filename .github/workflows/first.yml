@@ -4,3 +4,12 @@ on:
 jobs:
   first_job:
     name: This is my first job
+    steps:
+      - name: Show variables
+        env:
+          VAR1: This is
+          VAR2: A Demo of
+          VAR3: Github Actions
+          VAR4: Workflow jobs
+      run: |
+        echo $VAR1 $VAR2 $VAR3 $VAR4
