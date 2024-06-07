@@ -6,6 +6,7 @@ jobs:
     name: This is my first job
     steps:
       - name: Show variables
+        runs-on: ubuntu-latest
         env:
           VAR1: This is
           VAR2: A Demo of
