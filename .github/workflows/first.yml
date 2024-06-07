@@ -26,3 +26,11 @@ jobs:
           echo "Lets look again"
           ls -a .
         shell: bash
+  second_job:
+    name: Another jon
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read files
+        run: |
+          ls -a .
+        shell: bash
