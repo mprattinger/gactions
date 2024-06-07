@@ -23,6 +23,6 @@ jobs:
         shell: bash
       - name: Next one
         run: |
-          echo "Lets look again
+          echo "Lets look again"
           ls -a .
         shell: bash
