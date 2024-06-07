@@ -14,3 +14,9 @@ jobs:
           VAR4: Workflow jobs
         run: |
           echo $VAR1 $VAR2 $VAR3 $VAR4
+      - name: List data
+        run: |
+          touch first.txt
+          echo "Show files"
+          ls -a .
+        shell: bash
