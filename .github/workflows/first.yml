@@ -21,3 +21,8 @@ jobs:
           ls -a .
           pwd
         shell: bash
+      - name: Next one
+        run: |
+          echo "Lets look again
+          ls -a .
+        shell: bash
