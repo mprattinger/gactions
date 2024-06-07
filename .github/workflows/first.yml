@@ -11,5 +11,5 @@ jobs:
           VAR2: A Demo of
           VAR3: Github Actions
           VAR4: Workflow jobs
-      run: |
-        echo $VAR1 $VAR2 $VAR3 $VAR4
+        run: |
+          echo $VAR1 $VAR2 $VAR3 $VAR4
