@@ -1,0 +1,6 @@
+name: first
+on:
+  wiorkflow_dispatch
+jobs:
+  first_job:
+    name: This is my first job
