@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Show variables
+        id: vars
         env:
           VAR1: This is
           VAR2: A Demo of
@@ -16,7 +17,7 @@ jobs:
           echo $VAR1 $VAR2 $VAR3 $VAR4
       - name: List data
         run: |
-          echo $VAR1 $VAR2 $VAR3 $VAR4
+          echo ${{ steps.vars.outputs.VAR1 }}
           touch first.txt
           echo "Show files"
           ls -a .
